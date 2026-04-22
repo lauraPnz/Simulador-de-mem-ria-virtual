@@ -16,7 +16,7 @@ O projeto está dividido em dois módulos principais para garantir a organizaç�
 - `mmu.py`: Contém a classe `MMU`, responsável pela lógica bit-a-bit de tradução, detecção de Page Faults e execução do algoritmo FIFO usando uma fila de frames.
 - `main.py`: Script de execução que contém a documentação interativa e os cenários de teste que demonstram a MMU em operação.
 
-## 4. Tradução de emdereços
+## 4. Tradução de endereços
 1. Isolamento da Página: O endereço virtual de 20 bits é dividido. Os 13 bits menos significativos representam o Offset, e os 7 bits restantes representam o Número da Página.
 2. Consulta à Page Table: A MMU verifica se a combinação (PID, Página) possui um frame mapeado na RAM.
 3. Cálculo Físico: Caso presente, o endereço físico é gerado pela fórmula: EndereçoFisico = (Frame x 8192) + Offset
